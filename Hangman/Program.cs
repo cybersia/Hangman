@@ -31,9 +31,7 @@ class MainClass
        
 
         secretWord = secretWord.ToUpper();
-        Console.WriteLine(secretWord);
-
-       
+               
         //Variables
 
         int lives = 10;
@@ -41,7 +39,7 @@ class MainClass
         int wordLength = secretWord.Length;
         char[] secretArray = secretWord.ToCharArray();
         char[] printArray = new char[wordLength];
-        char[] guessedLetters = new char[26];
+        char[] guessedLetters = new char[11];
         int numberStore = 0;
         string fullGuess = "";
         bool victory = false;
