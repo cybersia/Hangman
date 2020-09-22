@@ -78,7 +78,16 @@ class MainClass
             Console.WriteLine("current progress: " + printProgress);
 
             Console.Write("\n\n\n");
-            Console.WriteLine("Guessed letters: [{0}]", string.Join(" ", guessedLetters));
+
+            
+                StringBuilder sb = new StringBuilder();
+               
+                sb.Append(guessedLetters);
+            Console.WriteLine(" Guessed Letters:[{0}]",sb," ");
+            
+
+            //Console.WriteLine("Guessed letters: [{0}]", string.Join(" ", guessedLetters));
+
             Console.Write(" Guess a letter or a word : ");
             string playerGuess = Console.ReadLine();
 
